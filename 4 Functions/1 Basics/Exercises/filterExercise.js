@@ -1,3 +1,4 @@
+// TASK:
 // Build a filter function which filters an array 
 // and returns the new array filtered (it exists already in js).
 // The api should look the same as this 
@@ -30,5 +31,3 @@ const includesAnA = words.customFilterer(x => x.includes('a'));
 console.log('Array isWordSprayOrElite = ', isWordSprayOrElite);
 console.log('Array includesAnE = ', includesAnE);
 console.log('Array includesAnA = ', includesAnA);
-
-// Took me roughly 30 mins :D

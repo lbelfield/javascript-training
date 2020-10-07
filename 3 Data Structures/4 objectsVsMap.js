@@ -1,12 +1,5 @@
 // https://medium.com/front-end-weekly/es6-map-vs-object-what-and-when-b80621932373
 
-// Object Fundamentals:
-// Object has a key inside it called a PROTOTYPE.
-// Prototype is used for inheritance.
-// ES2016 introduced Classes which are better for Inheritance and make use of Prototype.
-// Class inherits from its base class, Object
-// Prototype needs to be declared before the instance is called.
-
 // Functions and space:
 // object has the function 'add1Year()' at the object level
 // Class has the function 'add1Year()' at a Prototype level
