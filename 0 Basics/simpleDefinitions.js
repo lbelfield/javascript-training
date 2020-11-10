@@ -15,6 +15,12 @@
 // Functional:
 // JS is a Functional language. Piping API Functions make it functional
 
+// Procedural:
+// list of instructions to tell the computer what to do step by step
+
+// Context - this
+// Scope - variables
+
 // Middleware:
 // FIFO queue of tasks. 
 // Each and every one of those tasks are a middleware.

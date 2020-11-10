@@ -22,13 +22,13 @@ america.describe();
 // Think of 'this' as details (the object on the leftside of the dot)
 const america = {
   name: 'The United States of America',
-  yearFounded: 1776,
+  yearFounded: 1776, // undefined
   details: {
     symbol: 'eagle',
     currency: 'USD',
     printDetails() {
       console.log(
-        `The symbol is the ${this.symbol} and the currency is ${this.currency}.`,
+        `The symbol is the ${this.symbol} ${this.yearFounded} and the currency is ${this.currency}.`,
       )
     },
   },
