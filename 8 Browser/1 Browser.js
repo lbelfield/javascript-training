@@ -16,6 +16,8 @@
 // The browser analyses CSS:
 // CSS file is downloaded and parsed, then converted into CSS OM
 // CSS is a render blocking resource: bad because Flash of Unstyled Content (FOUC)
+// Also don't want CLS (cumulative layout shift) a Core Web Vital metric
+// This is when components on the page become janky
 // Better to have a blank screen whilst CSS downloads and parses despite DOM already being built
 // CSS file becomes CSS OM. CSS OM is converted by browser.
 // Browser - CSS OM - CSS Object Model (Like DOM for CSS)
@@ -58,7 +60,7 @@
 
         <!--
             This, as a script, is render blocking,
-            and that's why we put it here, at the bottom. 
+            and should be the last thing we want to load, hence at the bottom. 
             UX can wait for complex interactions.
             Not as important as painting the screen 
         -->
