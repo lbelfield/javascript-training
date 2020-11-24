@@ -34,3 +34,7 @@
 // If the current middleware function does not end the request-response cycle, 
 // then it must call next() to pass control to the next middleware function. 
 // Otherwise, the request will be left hanging.
+
+// DOM (Document Object Model):
+// The DOM is an object {} representation of the HTML in a tree structure
+// and can be manipulated.

@@ -1,5 +1,5 @@
-// The DOM is an object {} representation of the HTML in a tree structure
-// and can be manipulated (Document Object Model)
+// The DOM (Document Object Model) is an object {} representation of the 
+// HTML in a tree structure and can be manipulated.
 // In 1 Browser.js, we see the HTML example
 // The DOM representation of that HTML is below.
 // Note: 
@@ -29,6 +29,7 @@ html {
 // HTML parses into an object {} tree (DOM)
 // DOM renders and can be manipulated via APIs or via Dev Tools (Elements tab)
 // representation of HTML
+// Elements of HTML become nodes in the DOM.
 
 // codepen 
 // iframe are sub documents (document within the main document)
@@ -54,7 +55,7 @@ const h1 = document.querySelector("h1");
 typeof h1                     // is an object (as above)
 
 // DOM is mutable, just use get;set; values
-// JavaScript API in DOM adds it and it renders on page, despite npt being in initial H1
+// JavaScript API in DOM adds it and it renders on page, despite not being in initial H1
 
 // can't remove/add elements in DOM. Have to remove in the parent
 // store the parent node first, so you can reuse it
