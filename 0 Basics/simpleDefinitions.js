@@ -1,5 +1,6 @@
 // Prototype: 
 // globally extends a data-structure in one place, rather than 100 times like an object
+// C# equivalent - Extension Method
 // 1, 2
 
 // Polyfill: 

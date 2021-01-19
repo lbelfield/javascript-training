@@ -2,6 +2,8 @@
 // REMEMBER: Everything and anything is public for classes as last exercise!!
 // There is no private members in classes
 
+import { string } from "prop-types";
+
 class BaseCounter {
   constructor(start = 0) {
     this.count = start;
