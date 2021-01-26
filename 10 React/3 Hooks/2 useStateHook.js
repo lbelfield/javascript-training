@@ -11,7 +11,7 @@ React work pipeline (recursive calls):
   - yes: call components, one by one
     - call CountLabel passing count, get back tree
     - are there any components?
-      - no: use the tree from CounLabel in the right position
+      - no: use the tree from CountLabel in the right position
 
 React component call:
 - First call ever

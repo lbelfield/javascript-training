@@ -24,7 +24,7 @@
     // Only committed to your screen when all state changes have ended.
     // Diffing.
 
-// Why is this important for Seniors/TLs?
+// Why is this important for Seniors/TLs to understand this when choosing a JS framework?
     // Never one size fits all.
     // React shouldn't be a default. It should be a choice given the scenario.
     // Vanilla JS, smaller libraries (jQuery) could be better in smaller apps

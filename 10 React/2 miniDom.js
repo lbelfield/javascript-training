@@ -9,7 +9,7 @@ import "./styles.css";
 */
 
 export default function App() {
-  // same as: 
+  // React Hook -> useState(): 
   // note, we pass 0 to set count = 0
   const [count, setCount] = useState(0);
 
