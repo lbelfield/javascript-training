@@ -71,7 +71,7 @@ input.addEventListener("input", (e) => {
   rerenderLabel();
 });
 
-const rerenderLabel = () => {
+const rerenderLabel = () => { // changes are here...
   const label = document.getElementById("label");
   label.innerHTML = `There are <strong>${characters}</strong> characters in the textbox`;
 };
