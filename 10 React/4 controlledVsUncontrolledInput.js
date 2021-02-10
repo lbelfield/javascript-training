@@ -5,15 +5,28 @@
 // Two-way binding (Angular and non-react frameworks)
     // 1 User changes data
     // 2 Data changes data
-// For No control over . Lots of magic
-// Very difficult to manage lots of changes and 
+// No control over changes
+// Lots of magic
+// Very difficult to manage lots of changes
+// Depending on the View (bindings), you get a system that automatically updates everything for you
 // The framework has to keep everything in sync
 // Note in dotnet, V = Razor
 // C -> M -> V
 // C <- M <- V
+// View owns the state. Then syncs with the model.
+// Problems: Perf
 
 // React said; no more magic. Unidirectional (One-way binding)
-// In React, think of the View as the DOM -- VERY IMPORTANT
+// There is no View, Model, Controller
+// We always run everything together; everything is one-ness
+// Not separated
+// Input Output responsibility
+// For learning purposes, can think of it this way: 
+// In React, think of the View as the DOM
+// In C#, have Razor as View and have C# code as Models + Controller
+// In React, have each mini-DOM as View and JS as Controller... epiphany!
+// View sends an event to the controller
+// The View doesn't own the state.
 // no abstraction
 // Controller renders the view
 // No values getting automatically updated, unlike two-way
@@ -83,3 +96,6 @@ export default function App() {
   );
 }
 
+// QUESTIONS: 
+// Vanilla JS vs React in Uncontrolled vs Controlled.
+// Why doesn't need to wait? Because re-render??
