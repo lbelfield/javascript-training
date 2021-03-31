@@ -47,19 +47,28 @@ console.log('userClass; hides the Function add1Year() in the prototype', userCla
 
 
 // Object vs Map
+// Both Objects and Maps have key/value pairs
+
 // Before classes, having functions at an object item level impacted performance
 // Object.create(null) was a way to hack prototype and create an empty object
 // Map was created by ES2016 to create an empty (non-prototype) Object
 
-// Differences:
-// Objects can only hold simple strings. Prototype.
-// Map can hold object reference. No prototype.
+// Differences between Map vs Object:
 
-// Accessing items (using get)
+// key (as in key/value pair):
+// An Object's key has to be of type simple "string". 
+// A Map's key can be of any type and hold any object reference.
 
-// Add items (using set)
-// Both performs theoretically in O(1).
+// Prototype:
+// Objects have Prototypes.
+// Maps have no Prototype.
+
+
+// Accessing items (using get())
 // Retrieving a key doesn’t require to scan through all of data.
+
+// Add items (using set())
+// Both performs theoretically in O(1).
 
 // Delete items
 // Both Map and Object performance in removing element is similar.
@@ -69,6 +78,7 @@ console.log('userClass; hides the Function add1Year() in the prototype', userCla
 const userObject = {
   name: 'luca',
   age: 29,
+  1: 1,
   add1Year() {
     this.age += 1;
   }
@@ -80,15 +90,21 @@ console.log("userObject", userObject);
 
 // Hack: empty Object excluding prototypes
 var objectExcludingPrototype = Object.create(null); 
-console.log("objectExcludingPrototype", objectExcludingPrototype);
+console.log("Hack: objectExcludingPrototype", objectExcludingPrototype);
 
 
 const searchCache = new Map();
-// add items
-const arr = [{}, {}];
-searchCache.set(userObject, arr); // to prove can add complex types
+const arrayHoldsTwoObjects = [{hi: "hi"}, {hello: "hello"}];
 
+// Use Map.set() to set a key/value pair
+// to prove the key can be of any complex types (ie not string)
+searchCache.set(userObject, arrayHoldsTwoObjects);
+searchCache.set(1, 1); // important note that the key is 1, not '1'
+searchCache.set({name: "Luke"}, [{}, {}]);
+
+// Use Map.get() to get the value, using the key
 // retrieve items
-searchCache.get(userObject);
+var get = searchCache.get(userObject);
+console.log("get()", get);
 
-console.log("map", searchCache);
+console.log("Full Map()", searchCache);

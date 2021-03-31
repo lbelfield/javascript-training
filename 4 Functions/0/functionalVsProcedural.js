@@ -12,3 +12,9 @@
 
 // Below is a for loop vs foreach loop vs reduce:
 // https://www.measurethat.net/Benchmarks/Show/2472/0/arrayreduce-vs-for-loop-vs-arrayforeach#latest_results_block
+// 1. The for loop: 1,014,783.0 Ops/sec
+// 2. The forEach loop: 462,350.2 Ops/sec
+// 3. The reduce: 56,819.9 Ops/sec
+
+// For loop did over 2x more operations than foreach loop, and nearly 18x more than reduce
+

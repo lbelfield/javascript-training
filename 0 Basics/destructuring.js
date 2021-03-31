@@ -11,6 +11,6 @@ const port = process.env.PORT;
 // Example 2:
 const foo = [ 'one', 'two', 'three' ];
 const [ red, yellow, green ] = foo;
-console.log('red', red);
-console.log('yellow', yellow);
-console.log('green', green);
+console.log('red', red, 'red=one');
+console.log('yellow', yellow, 'yellow=two');
+console.log('green', green, 'green=three');
