@@ -14,7 +14,17 @@
 // Hooks are atomic
 // Custom hooks are also atomic
 
+  // Hooks - Decouple BLL from rendering without multiple components. Components should be a rendering concern.
+  // Decouple => BLL to hooks. rendering to components.
+  // Hooks - Allow you to do complex things wthout making your tree to be complex
+  // refactored for SRP, removing BLL to custom hook (decoupled).
+  // Now UsersLists.js is View only (only cares about presentation logic).
+  // This custom hook is not a rendering concern
+  // Added benefit of reusable! :D
 
+  // History: Recompose was a HOC library that was a bitch to use
+
+  // https://usehooks.com/
 
 // Example: 
 // Two independent buttons:
