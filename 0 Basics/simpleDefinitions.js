@@ -43,3 +43,7 @@
 // Hooks - Decouple BLL from rendering without multiple components. Components should be a rendering concern.
 // Decouple => BLL to hooks. rendering to components.
 // Hooks - Allow you to do complex things wthout making your tree to be complex
+
+// Context - 
+// Context provides a way to pass data through the component tree 
+// without having to pass props down manually at every level.
