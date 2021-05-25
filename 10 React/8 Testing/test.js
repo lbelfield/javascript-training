@@ -45,3 +45,9 @@
     // because you're looking at it from a user pov
   // Can test hooks too :D
 
+
+  // With beforeEach, you should be able to comment the rest of the file.
+  // The tests are Unit Tests, hence they should be isolated.
+  // Imagine you are refactoring, then you want to remove a feature, should be able to delete the
+  // pertinent tests and not touch multiple, unrelated tests.
+  
