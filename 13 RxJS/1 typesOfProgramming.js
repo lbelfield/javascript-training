@@ -1,3 +1,5 @@
+https://itnext.io/functional-reactive-programming-explained-in-a-simple-way-in-javascript-yes-in-a-simple-way-925b14cddf75
+
 // Procedural (OOP, imperative) vs Functional (declarative) Programming
 // see Chapter x
 
