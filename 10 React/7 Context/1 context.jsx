@@ -25,6 +25,7 @@ const MyContext = React.createContext(defaultValue);
 value;
 
 
+
 // 3 Context.Consumer
   // Consumer allows for that re-use
 <MyContext.Consumer>
