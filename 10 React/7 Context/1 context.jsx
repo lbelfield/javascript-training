@@ -41,6 +41,17 @@ value;
 // 1 HOOKS:
 const value = useContext(MyContext); // useContext must be the context object itself (not provider or consumer)
 
+// REDUX:
+/* Single Immutable Store
+Immutability – always return new state, never change the current state
+One way (Uni-directional)
+Reducer – Takes state and an action and returns new state. Pure
+Action – Describes a user’s intent 
+Need Redux: 
+•	You're displaying the same data in multiple places. 
+•	You have a large number of potential state changes that are hard to manage. 
+•	You want to handle state changes in a single spot for consistency, testability, and your own sanity. 
+*/
 
 // Redux vs Context
 // Redux has only one context, like classes
